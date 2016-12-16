@@ -24,5 +24,7 @@ docker run --name <MyServerName> -e TZ=<TimeZone> -p <ServerPort>:8080 -d skydis
 ... where `<MyServerName>` is the name you want to assign to your container, `<TimeZone>` is your timezone, for exemple, for Paris: `TZ=Europe/Paris` and `<ServerPort>` is the port any client will use to connect to your server.
 
 Other available options are:
+
 `-p <ClientPort>:8888` - To configure the client port
+
 `-v <PluginsPath>:/home/pi/SARAH-Server-NodeJS/plugins` - to mount an host folder as the server plugins folder (you will need this if you want to share plugins between the server and the clients)
